@@ -1,0 +1,8 @@
+old
+.RData
+.Rhistory
+.DS_Store
+.Rproj.user
+scripts.Rproj
+figures/*.pdf
+figures/*.png
