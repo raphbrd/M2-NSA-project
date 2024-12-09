@@ -1,3 +1,11 @@
+#' Fonction utilitaire pour charger et pré-traité les données
+#' Spécifique aux jeux de données accessible ici : 
+#' https://www.genepattern.org/datasets#gsc.tab=0
+#'
+#' Les fichiers .res sont supposés être transformés en csv (par ex. simple ouverture dans Excel)
+#' 
+#' @author R. Bordas A. Hollands
+
 load_gene_data <- function(filename, output_name) {
   df <- read.csv(filename, sep = ";", header = FALSE, skip = 3)
   df <- t(df)
